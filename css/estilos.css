@@ -1,0 +1,86 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   background: #02010a;
+   font-family: 'Dancing Script', cursive;
+}
+
+#contenido{
+   width: 900px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+header{
+   width: 100%;
+   background: #5b7989;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+}
+
+header h1{
+   font-size: 2.3em;
+   color: white;
+   text-shadow: 2px 2px 1px #02010a;
+   font-weight: lighter;
+   padding: 0.5em;
+}
+
+header nav{
+   width: 300px;
+   padding: 0.5em;
+   display: flex;
+   flex-direction: row;
+}
+
+nav a{
+   width: 100%;
+   font-size: 1.5em;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+   background: tomato;
+   border-radius: 10px;
+   padding: 0.2em;
+   margin: 0.2em;
+   transition: 1s;
+}
+
+nav a:hover{
+   border-radius: 20px;
+   background: #02010a;
+   transform: scaleY(1.3);
+}
+
+nav a[href^="inicio"]{
+   text-decoration: none;
+}
+
+#imagencentral{
+   width:100%;
+   background: #82c3a6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1em;
+}
+
+#imagencentral .imagen1{
+   padding: 0;
+}
+
+.imagen1 img{
+   width: 100%;
+   height: 100%;
+   border: 2px solid;
+}
+
+}
