@@ -80,21 +80,8 @@ nav a:hover{
    transform: scaleY(1.3);
 }
 
-nav a[href^="index"]{
+nav a[href^="retratos"]{
    text-decoration: none;
-}
-
-#imagencentral{
-   width:100%;
-   background: #82c3a6;
-   margin: auto;
-   padding: 1em;
-}
-
-.imagen1 img{
-   width: 100%;
-   height: 100%;
-   border: 2px solid;
 }
 
 #imagensecundaria{
@@ -104,54 +91,38 @@ nav a[href^="index"]{
    color: black;
    padding: 1em;
    display: flex;
-   flex-flow: row,wrap;
-   justify-content: space-around;
-   align-content: center;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .imagenes{
-   width: 100%;
+   width: 32%;
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    align-items: center;
+   padding: 1.2em;
 }
 
-.imagenes a{(
+.imagenes img {
    width: 100%;
-   text-decoration: none;)}
-.imagenes a:visited{
-   color: black;
-}
-
-.imagenes a img {
-   width: 90%;
-   height: 270px;
-   margin: auto;
+   height: 210px;
+   margin: 0;
    border: 1px solid;
    display: flex;
    align-items: center;
    transition: 0.8s;
 }
 
-.imagenes a h2{
-   font-size: 1.5em;
-   padding-top: 0.7em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: black;
+.imagenes .blur{
+   -webkit-filter: blur(10px);
 }
 
-.imagenes .rotar:hover{
-   transform:rotateZ(10deg);
-   box-shadow: 2px 2px #82c3a6;
-   border: 2px solid;
+.imagenes:nth-child(even){
+   -webkit-filter: grayscale(100%)
 }
 
-.imagenes .trasladar:hover{
-   transform: translate(20px,-5px);
-   box-shadow: 2px 2px #82c3a6;
-   border: 2px solid;
+.imagenes .sepia{
+   -webkit-filter: sepia(90%)
 }
 
 footer{
@@ -254,12 +225,16 @@ footer{
    }
 
    .imagenes{
-      width: 100%;
+      width: 70%;
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+   }
+
+   .imagenes a{
+      width: 100%;
    }
 
    .imagenes a img{
