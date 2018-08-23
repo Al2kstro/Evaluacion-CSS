@@ -93,7 +93,6 @@ nav a[href^="index"]{
 
 .imagen1 img{
    width: 100%;
-   height: 100%;
    border: 2px solid;
 }
 
@@ -101,10 +100,11 @@ nav a[href^="index"]{
    width: 100%;
    height: auto;
    background: #d5c75f;
+   border: 1px solid;
    color: black;
    padding: 1em;
    display: flex;
-   flex-flow: row,wrap;
+   flex-flow: row, wrap;
    justify-content: space-around;
    align-content: center;
 }
@@ -123,7 +123,7 @@ nav a[href^="index"]{
    color: black;
 }
 
-.imagenes a img {
+.imagenes a img{
    width: 90%;
    height: 270px;
    margin: auto;
@@ -157,7 +157,7 @@ nav a[href^="index"]{
 footer{
    width: 100%;
    height: 230px;
-   background:  #C6d5c5;
+   background: #C6d5c5;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -169,20 +169,18 @@ footer{
 .item{
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
 }
 
 .item:first-child{(
    padding-left: 1.8em;)}
-   a{
-      text-decoration: none;
-      font-size: 1.2em;
-      color: black;
-      font-weight: 550;
-   }
-
 .item:last-child{
-   padding-right: 1.8em;
+   padding-right: 1.8em;}
+
+a{
+   text-decoration: none;
+   font-size: 1.2em;
+   color: black;
+   font-weight: 550;
 }
 
 .item h2{
@@ -253,13 +251,28 @@ footer{
       align-items: center;
    }
 
-   .imagenes{
+   #imagencentral .imagen1{
+      width: 70%;
+      margin: auto;
+   }
+
+   .imagen1 img{
       width: 100%;
+      height: 250px;
+      margin: auto;
+   }
+
+   .imagenes{
+      width: 70%;
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+   }
+
+   .imagenes a{
+      width: 100%;
    }
 
    .imagenes a img{
